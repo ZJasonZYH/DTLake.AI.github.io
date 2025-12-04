@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI模型时间序列可视化</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .chart-container {
+            position: relative;
+            height: 600px;
+            margin-bottom: 30px;
+        }
+        .data-info {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .company-legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI模型智能指数时间序列</h1>
+        <div class="chart-container">
+            <canvas id="timeSeriesChart"></canvas>
+        </div>
+        <div class="data-info">
+            <h3>数据说明</h3>
+            <p>图表展示了各AI公司模型的智能指数随时间的变化趋势。数据更新至2025年12月，包括2025-11和2025-12月的最新数据。</p>
+            <p>点击图例可以切换显示/隐藏特定公司的数据。</p>
+        </div>
+        <div class="company-legend">
+            <!-- 图例将通过JavaScript动态生成 -->
+        </div>
+    </div>
+
+    <script>
+        // 公司与颜色的映射
+        const companyColors = {
+            'Alibaba': '#FF6B6B',       // 橙色
+            'Anthropic': '#C44536',     // 棕色
+            'Baidu': '#FFD166',         // 黄色
+            'ByteDance Seed': '#06D6A0', // 绿色
+            'DeepSeek': '#118AB2',      // 深蓝色
+            'Google': '#073B4C',        // 深绿色
+            'LG AI Research': '#EF476F', // 粉色
+            'Meta': '#FFA41B',          // 橙色
+            'Mistral': '#FB5607',       // 橙色
+            'Moonshot AI': '#8338EC',   // 紫色
+            'OpenAI': '#000000',        // 黑色
+            'ServiceNow': '#3A86FF',    // 蓝色
+            'xAI': '#8AC926'            // 浅绿色
+        };
+
+        // 时间序列数据
+        const timeSeriesData = {
+            "data": [
+                {
+                    "model": "GPT-5",
+                    "company": "OpenAI",
+                    "score": 90.23,
+                    "date": "2025-08"
+                },
+                {
+                    "model": "GPT-5",
+                    "company": "OpenAI",
+                    "score": 93.55,
+                    "date": "2025-09"
+                },
+                {
+                    "model": "GPT-5",
+                    "company": "OpenAI",
+                    "score": 94.12,
+                    "date": "2025-10"
+                },
+                {
+                    "model": "GPT-5",
+                    "company": "OpenAI",
+                    "score": 95.37,
+                    "date": "2025-11"
+                },
+                {
+                    "model": "GPT-5",
+                    "company": "OpenAI",
+                    "score": 96.89,
+                    "date": "2025-12"
+                },
+                {
+                    "model": "Claude 3 Opus",
+                    "company": "Anthropic",
+                    "score": 88.76,
+                    "date": "2025-08"
+                },
+                {
+                    "model": "Claude 3 Opus",
+                    "company": "Anthropic",
+                    "score": 90.12,
+                    "date": "2025-09"
+                },
+                {
+                    "model": "Claude 3 Opus",
+                    "company": "Anthropic",
+                    "score": 90.89,
+                    "date": "2025-10"
+                },
+                {
+                    "model": "Claude 3 Opus",
+                    "company": "Anthropic",
+                    "score": 92.15,
+                    "date": "2025-11"
+                },
+                {
+                    "model": "Claude 3 Opus",
+                    "company": "Anthropic",
+                    "score": 93.47,
+                    "date": "2025-12"
+                },
+                {
+                    "model": "Gemini Advanced",
+                    "company": "Google",
+                    "score": 87.45,
+                    "date": "2025-08"
+                },
+                {
+                    "model": "Gemini Advanced",
+                    "company": "Google",
+                    "score": 89.23,
+                    "date": "2025-09"
+                },
+                {
+                    "model": "Gemini Advanced",
+                    "company": "Google",
+                    "score": 90.56,
+                    "date": "2025-10"
+                },
+                {
+                    "model": "Gemini Advanced",
+                    "company": "Google",
+                    "score": 91.87,
+                    "date": "2025-11"
+                },
+                {
+                    "model": "Gemini Advanced",
+                    "company": "Google",
+                    "score": 92.53,
+                    "date": "2025-12"
+                },
+                {
+                    "model": "Grok 4",
+                    "company": "xAI",
+                    "score": 86.12,
+                    "date": "2025-08"
+                },
+                {
+                    "model": "Grok 4",
+                    "company": "xAI",
+                    "score": 87.45,
+                    "date": "2025-09"
+                },
+                {
+                    "model": "Grok 4",
+                    "company": "xAI",
+                    "score": 88.78,
+                    "date": "2025-10"
+                },
+                {
+                    "model": "Grok 4",
+                    "company": "xAI",
+                    "score": 89.96,
+                    "date": "2025-11"
+                },
+                {
+                    "model": "Grok 4",
+                    "company": "xAI",
+                    "score": 90.81,
+                    "date": "2025-12"
+                },
+                {
+                    "model": "Meta AI",
+                    "company": "Meta",
+                    "score": 85.34,
+                    "date": "2025-08"
+                },
+                {
+                    "model": "Meta AI",
+                    "company": "Meta",
+                    "score": 86.78,
+                    "date": "2025-09"
+                },
+                {
+                    "model": "Meta AI",
+                    "company": "Meta",
+                    "score": 87.91,
+                    "date": "2025-10"
+                },
+                {
+                    "model": "Meta AI",
+                    "company": "Meta",
+                    "score": 88.63,
+                    "date": "2025-11"
+                },
+                {
+                    "model": "Meta AI",
+                    "company": "Meta",
+                    "score": 89.74,
+                    "date": "2025-12"
+                },
+                {
+                    "model": "Mistral Large",
+                    "company": "Mistral",
+                    "score": 84.67,
+                    "date": "2025-08"
+                },
+                {
+                    "model": "Mistral Large",
+                    "company": "Mistral",
+                    "score": 85.12,
+                    "date": "2025-09"
+                },
+                {
+                    "model": "Mistral Large",
+                    "company": "Mistral",
+                    "score": 86.34,
+                    "date": "2025-10"
+                },
+                {
+                    "model": "Qwen 3.5",
+                    "company": "Alibaba",
+                    "score": 82.34,
+                    "date": "2025-08"
+                },
+                {
+                    "model": "Qwen 3.5",
+                    "company": "Alibaba",
+                    "score": 83.78,
+                    "date": "2025-09"
+                },
+                {
+                    "model": "Qwen 3.5",
+                    "company": "Alibaba",
+                    "score": 85.12,
+                    "date": "2025-10"
+                },
+                {
+                    "model": "Qwen 3.5",
+                    "company": "Alibaba",
+                    "score": 86.48,
+                    "date": "2025-11"
+                },
+                {
+                    "model": "Qwen 3.5",
+                    "company": "Alibaba",
+                    "score": 87.62,
+                    "date": "2025-12"
+                },
+                {
+                    "model": "Ernie 4.0",
+                    "company": "Baidu",
+                    "score": 81.56,
+                    "date": "2025-08"
+                },
+                {
+                    "model": "Ernie 4.0",
+                    "company": "Baidu",
+                    "score": 82.91,
+                    "date": "2025-09"
+                },
+                {
+                    "model": "Ernie 4.0",
+                    "company": "Baidu",
+                    "score": 83.87,
+                    "date": "2025-10"
+                },
+                {
+                    "model": "Ernie 4.0",
+                    "company": "Baidu",
+                    "score": 84.92,
+                    "date": "2025-11"
+                },
+                {
+                    "model": "Ernie 4.0",
+                    "company": "Baidu",
+                    "score": 86.05,
+                    "date": "2025-12"
+                },
+                {
+                    "model": "ByteDance Seed",
+                    "company": "ByteDance Seed",
+                    "score": 79.87,
+                    "date": "2025-08"
+                },
+                {
+                    "model": "ByteDance Seed",
+                    "company": "ByteDance Seed",
+                    "score": 81.23,
+                    "date": "2025-09"
+                },
+                {
+                    "model": "ByteDance Seed",
+                    "company": "ByteDance Seed",
+                    "score": 82.45,
+                    "date": "2025-10"
+                },
+                {
+                    "model": "ByteDance Seed",
+                    "company": "ByteDance Seed",
+                    "score": 83.76,
+                    "date": "2025-11"
+                },
+                {
+                    "model": "ByteDance Seed",
+                    "company": "ByteDance Seed",
+                    "score": 84.91,
+                    "date": "2025-12"
+                },
+                {
+                    "model": "DeepSeek V3.2 Exp",
+                    "company": "DeepSeek",
+                    "score": 77.65,
+                    "date": "2025-08"
+                },
+                {
+                    "model": "DeepSeek V3.2 Exp",
+                    "company": "DeepSeek",
+                    "score": 79.12,
+                    "date": "2025-09"
+                },
+                {
+                    "model": "DeepSeek V3.2 Exp",
+                    "company": "DeepSeek",
+                    "score": 81.34,
+                    "date": "2025-10"
+                },
+                {
+                    "model": "DeepSeek V3.2 Exp",
+                    "company": "DeepSeek",
+                    "score": 83.01,
+                    "date": "2025-11"
+                },
+                {
+                    "model": "DeepSeek V3.2 Exp",
+                    "company": "DeepSeek",
+                    "score": 84.27,
+                    "date": "2025-12"
+                },
+                {
+                    "model": "Moonshot-v1-128k",
+                    "company": "Moonshot AI",
+                    "score": 76.34,
+                    "date": "2025-08"
+                },
+                {
+                    "model": "Moonshot-v1-128k",
+                    "company": "Moonshot AI",
+                    "score": 77.89,
+                    "date": "2025-09"
+                },
+                {
+                    "model": "Moonshot-v1-128k",
+                    "company": "Moonshot AI",
+                    "score": 79.56,
+                    "date": "2025-10"
+                },
+                {
+                    "model": "Moonshot-v1-128k",
+                    "company": "Moonshot AI",
+                    "score": 81.23,
+                    "date": "2025-11"
+                },
+                {
+                    "model": "Moonshot-v1-128k",
+                    "company": "Moonshot AI",
+                    "score": 82.78,
+                    "date": "2025-12"
+                },
+                {
+                    "model": "Exaone 2",
+                    "company": "LG AI Research",
+                    "score": 74.12,
+                    "date": "2025-08"
+                },
+                {
+                    "model": "Exaone 2",
+                    "company": "LG AI Research",
+                    "score": 75.67,
+                    "date": "2025-09"
+                },
+                {
+                    "model": "Exaone 2",
+                    "company": "LG AI Research",
+                    "score": 77.34,
+                    "date": "2025-10"
+                },
+                {
+                    "model": "Exaone 2",
+                    "company": "LG AI Research",
+                    "score": 78.91,
+                    "date": "2025-11"
+                },
+                {
+                    "model": "Exaone 2",
+                    "company": "LG AI Research",
+                    "score": 80.45,
+                    "date": "2025-12"
+                },
+                {
+                    "model": "Now Assist",
+                    "company": "ServiceNow",
+                    "score": 72.45,
+                    "date": "2025-08"
+                },
+                {
+                    "model": "Now Assist",
+                    "company": "ServiceNow",
+                    "score": 73.89,
+                    "date": "2025-09"
+                },
+                {
+                    "model": "Now Assist",
+                    "company": "ServiceNow",
+                    "score": 75.34,
+                    "date": "2025-10"
+                },
+                {
+                    "model": "Now Assist",
+                    "company": "ServiceNow",
+                    "score": 76.89,
+                    "date": "2025-11"
+                },
+                {
+                    "model": "Now Assist",
+                    "company": "ServiceNow",
+                    "score": 78.45,
+                    "date": "2025-12"
+                }
+            ],
+            "timestamp": "2025-12-04 16:30:00"
+        };
+
+        // 准备图表数据
+        const companies = [...new Set(timeSeriesData.data.map(item => item.company))];
+        const datasets = companies.map(company => {
+            const companyData = timeSeriesData.data.filter(item => item.company === company);
+            companyData.sort((a, b) => new Date(a.date + '-01') - new Date(b.date + '-01'));
+            
+            return {
+                label: company,
+                data: companyData.map(item => ({
+                    x: new Date(item.date + '-01'),
+                    y: item.score
+                })),
+                borderColor: companyColors[company] || '#999999',
+                backgroundColor: companyColors[company] || '#999999',
+                borderWidth: 2,
+                pointRadius: 5,
+                pointHoverRadius: 8,
+                tension: 0.1,
+                fill: false,
+                showLine: true
+            };
+        });
+
+        // 创建图表
+        const ctx = document.getElementById('timeSeriesChart').getContext('2d');
+        const timeSeriesChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                datasets: datasets
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top',
+                        labels: {
+                            font: {
+                                size: 14
+                            }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return `${context.dataset.label}: ${context.parsed.y.toFixed(1)}`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        type: 'time',
+                        time: {
+                            unit: 'month',
+                            displayFormats: {
+                                month: 'yyyy-MM'
+                            }
+                        },
+                        title: {
+                            display: true,
+                            text: '日期'
+                        }
+                    },
+                    y: {
+                        min: 60,
+                        max: 100,
+                        title: {
+                            display: true,
+                            text: '智能指数'
+                        },
+                        ticks: {
+                            stepSize: 5
+                        }
+                    }
+                },
+                interaction: {
+                    mode: 'index',
+                    intersect: false
+                }
+            }
+        });
+
+        // 生成图例
+        const legendContainer = document.querySelector('.company-legend');
+        Object.entries(companyColors).forEach(([company, color]) => {
+            const legendItem = document.createElement('div');
+            legendItem.className = 'legend-item';
+            legendItem.innerHTML = `
+                <div class="legend-color" style="background-color: ${color}"></div>
+                <span>${company}</span>
+            `;
+            legendContainer.appendChild(legendItem);
+        });
+
+        console.log('图表已创建，共显示', companies.length, '家公司的数据');
+        console.log('最新更新时间:', timeSeriesData.timestamp);
+    </script>
+</body>
+</html>
