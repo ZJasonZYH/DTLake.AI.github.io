@@ -1,0 +1,1057 @@
+{
+  "title": "前沿的语言模型（随时间变化）",
+  "description": "展示顶级AI模型的智能指数随时间的变化趋势，按公司分类",
+  "data": [
+    {
+      "model": "Tongyi Qianwen 3",
+      "company": "Alibaba",
+      "score": 12.49,
+      "date": "2022-11"
+    },
+    {
+      "model": "Tongyi Qianwen 3",
+      "company": "Alibaba",
+      "score": 15.8,
+      "date": "2023-02"
+    },
+    {
+      "model": "Tongyi Qianwen 3",
+      "company": "Alibaba",
+      "score": 19.53,
+      "date": "2023-05"
+    },
+    {
+      "model": "Tongyi Qianwen 3",
+      "company": "Alibaba",
+      "score": 24.62,
+      "date": "2023-08"
+    },
+    {
+      "model": "Tongyi Qianwen 3",
+      "company": "Alibaba",
+      "score": 29.36,
+      "date": "2023-11"
+    },
+    {
+      "model": "Tongyi Qianwen 3",
+      "company": "Alibaba",
+      "score": 34.35,
+      "date": "2024-02"
+    },
+    {
+      "model": "Tongyi Qianwen 3",
+      "company": "Alibaba",
+      "score": 39.93,
+      "date": "2024-05"
+    },
+    {
+      "model": "Tongyi Qianwen 3",
+      "company": "Alibaba",
+      "score": 44.97,
+      "date": "2024-08"
+    },
+    {
+      "model": "Tongyi Qianwen 3",
+      "company": "Alibaba",
+      "score": 48.52,
+      "date": "2024-11"
+    },
+    {
+      "model": "Tongyi Qianwen 3",
+      "company": "Alibaba",
+      "score": 52.78,
+      "date": "2025-02"
+    },
+    {
+      "model": "Tongyi Qianwen 3",
+      "company": "Alibaba",
+      "score": 55.38,
+      "date": "2025-05"
+    },
+    {
+      "model": "Tongyi Qianwen 3",
+      "company": "Alibaba",
+      "score": 57.88,
+      "date": "2025-08"
+    },
+    {
+      "model": "Tongyi Qianwen 3",
+      "company": "Alibaba",
+      "score": 59.07,
+      "date": "2025-10"
+    },
+    {
+      "model": "Claude 4.5 Sonnet",
+      "company": "Anthropic",
+      "score": 17.8,
+      "date": "2022-11"
+    },
+    {
+      "model": "Claude 4.5 Sonnet",
+      "company": "Anthropic",
+      "score": 20.82,
+      "date": "2023-02"
+    },
+    {
+      "model": "Claude 4.5 Sonnet",
+      "company": "Anthropic",
+      "score": 25.27,
+      "date": "2023-05"
+    },
+    {
+      "model": "Claude 4.5 Sonnet",
+      "company": "Anthropic",
+      "score": 29.66,
+      "date": "2023-08"
+    },
+    {
+      "model": "Claude 4.5 Sonnet",
+      "company": "Anthropic",
+      "score": 33.96,
+      "date": "2023-11"
+    },
+    {
+      "model": "Claude 4.5 Sonnet",
+      "company": "Anthropic",
+      "score": 39.55,
+      "date": "2024-02"
+    },
+    {
+      "model": "Claude 4.5 Sonnet",
+      "company": "Anthropic",
+      "score": 44.57,
+      "date": "2024-05"
+    },
+    {
+      "model": "Claude 4.5 Sonnet",
+      "company": "Anthropic",
+      "score": 49.57,
+      "date": "2024-08"
+    },
+    {
+      "model": "Claude 4.5 Sonnet",
+      "company": "Anthropic",
+      "score": 54.15,
+      "date": "2024-11"
+    },
+    {
+      "model": "Claude 4.5 Sonnet",
+      "company": "Anthropic",
+      "score": 57.3,
+      "date": "2025-02"
+    },
+    {
+      "model": "Claude 4.5 Sonnet",
+      "company": "Anthropic",
+      "score": 59.65,
+      "date": "2025-05"
+    },
+    {
+      "model": "Claude 4.5 Sonnet",
+      "company": "Anthropic",
+      "score": 62.29,
+      "date": "2025-08"
+    },
+    {
+      "model": "Claude 4.5 Sonnet",
+      "company": "Anthropic",
+      "score": 62.48,
+      "date": "2025-10"
+    },
+    {
+      "model": "ERNIE Bot 3.0",
+      "company": "Baidu",
+      "score": 13.32,
+      "date": "2022-11"
+    },
+    {
+      "model": "ERNIE Bot 3.0",
+      "company": "Baidu",
+      "score": 16.68,
+      "date": "2023-02"
+    },
+    {
+      "model": "ERNIE Bot 3.0",
+      "company": "Baidu",
+      "score": 21.18,
+      "date": "2023-05"
+    },
+    {
+      "model": "ERNIE Bot 3.0",
+      "company": "Baidu",
+      "score": 25.93,
+      "date": "2023-08"
+    },
+    {
+      "model": "ERNIE Bot 3.0",
+      "company": "Baidu",
+      "score": 31.2,
+      "date": "2023-11"
+    },
+    {
+      "model": "ERNIE Bot 3.0",
+      "company": "Baidu",
+      "score": 35.99,
+      "date": "2024-02"
+    },
+    {
+      "model": "ERNIE Bot 3.0",
+      "company": "Baidu",
+      "score": 40.55,
+      "date": "2024-05"
+    },
+    {
+      "model": "ERNIE Bot 3.0",
+      "company": "Baidu",
+      "score": 45.2,
+      "date": "2024-08"
+    },
+    {
+      "model": "ERNIE Bot 3.0",
+      "company": "Baidu",
+      "score": 48.06,
+      "date": "2024-11"
+    },
+    {
+      "model": "ERNIE Bot 3.0",
+      "company": "Baidu",
+      "score": 51.91,
+      "date": "2025-02"
+    },
+    {
+      "model": "ERNIE Bot 3.0",
+      "company": "Baidu",
+      "score": 54.4,
+      "date": "2025-05"
+    },
+    {
+      "model": "ERNIE Bot 3.0",
+      "company": "Baidu",
+      "score": 56.77,
+      "date": "2025-08"
+    },
+    {
+      "model": "ERNIE Bot 3.0",
+      "company": "Baidu",
+      "score": 58.49,
+      "date": "2025-10"
+    },
+    {
+      "model": "Doubao Max",
+      "company": "ByteDance Seed",
+      "score": 7.99,
+      "date": "2022-11"
+    },
+    {
+      "model": "Doubao Max",
+      "company": "ByteDance Seed",
+      "score": 11.93,
+      "date": "2023-02"
+    },
+    {
+      "model": "Doubao Max",
+      "company": "ByteDance Seed",
+      "score": 15.3,
+      "date": "2023-05"
+    },
+    {
+      "model": "Doubao Max",
+      "company": "ByteDance Seed",
+      "score": 20.2,
+      "date": "2023-08"
+    },
+    {
+      "model": "Doubao Max",
+      "company": "ByteDance Seed",
+      "score": 24.42,
+      "date": "2023-11"
+    },
+    {
+      "model": "Doubao Max",
+      "company": "ByteDance Seed",
+      "score": 29.58,
+      "date": "2024-02"
+    },
+    {
+      "model": "Doubao Max",
+      "company": "ByteDance Seed",
+      "score": 34.7,
+      "date": "2024-05"
+    },
+    {
+      "model": "Doubao Max",
+      "company": "ByteDance Seed",
+      "score": 38.56,
+      "date": "2024-08"
+    },
+    {
+      "model": "Doubao Max",
+      "company": "ByteDance Seed",
+      "score": 43.85,
+      "date": "2024-11"
+    },
+    {
+      "model": "Doubao Max",
+      "company": "ByteDance Seed",
+      "score": 48.23,
+      "date": "2025-02"
+    },
+    {
+      "model": "Doubao Max",
+      "company": "ByteDance Seed",
+      "score": 51.21,
+      "date": "2025-05"
+    },
+    {
+      "model": "Doubao Max",
+      "company": "ByteDance Seed",
+      "score": 54.25,
+      "date": "2025-08"
+    },
+    {
+      "model": "Doubao Max",
+      "company": "ByteDance Seed",
+      "score": 55.58,
+      "date": "2025-10"
+    },
+    {
+      "model": "DeepSeek V3.2 Exp",
+      "company": "DeepSeek",
+      "score": 10.17,
+      "date": "2022-11"
+    },
+    {
+      "model": "DeepSeek V3.2 Exp",
+      "company": "DeepSeek",
+      "score": 12.97,
+      "date": "2023-02"
+    },
+    {
+      "model": "DeepSeek V3.2 Exp",
+      "company": "DeepSeek",
+      "score": 17.25,
+      "date": "2023-05"
+    },
+    {
+      "model": "DeepSeek V3.2 Exp",
+      "company": "DeepSeek",
+      "score": 21.55,
+      "date": "2023-08"
+    },
+    {
+      "model": "DeepSeek V3.2 Exp",
+      "company": "DeepSeek",
+      "score": 26.42,
+      "date": "2023-11"
+    },
+    {
+      "model": "DeepSeek V3.2 Exp",
+      "company": "DeepSeek",
+      "score": 31.41,
+      "date": "2024-02"
+    },
+    {
+      "model": "DeepSeek V3.2 Exp",
+      "company": "DeepSeek",
+      "score": 37.06,
+      "date": "2024-05"
+    },
+    {
+      "model": "DeepSeek V3.2 Exp",
+      "company": "DeepSeek",
+      "score": 42.37,
+      "date": "2024-08"
+    },
+    {
+      "model": "DeepSeek V3.2 Exp",
+      "company": "DeepSeek",
+      "score": 47.58,
+      "date": "2024-11"
+    },
+    {
+      "model": "DeepSeek V3.2 Exp",
+      "company": "DeepSeek",
+      "score": 51.66,
+      "date": "2025-02"
+    },
+    {
+      "model": "DeepSeek V3.2 Exp",
+      "company": "DeepSeek",
+      "score": 55.43,
+      "date": "2025-05"
+    },
+    {
+      "model": "DeepSeek V3.2 Exp",
+      "company": "DeepSeek",
+      "score": 58.17,
+      "date": "2025-08"
+    },
+    {
+      "model": "DeepSeek V3.2 Exp",
+      "company": "DeepSeek",
+      "score": 59.59,
+      "date": "2025-10"
+    },
+    {
+      "model": "Gemini 2.5 Flash",
+      "company": "Google",
+      "score": 21.66,
+      "date": "2022-11"
+    },
+    {
+      "model": "Gemini 2.5 Flash",
+      "company": "Google",
+      "score": 25.46,
+      "date": "2023-02"
+    },
+    {
+      "model": "Gemini 2.5 Flash",
+      "company": "Google",
+      "score": 29.05,
+      "date": "2023-05"
+    },
+    {
+      "model": "Gemini 2.5 Flash",
+      "company": "Google",
+      "score": 32.64,
+      "date": "2023-08"
+    },
+    {
+      "model": "Gemini 2.5 Flash",
+      "company": "Google",
+      "score": 36.75,
+      "date": "2023-11"
+    },
+    {
+      "model": "Gemini 2.5 Flash",
+      "company": "Google",
+      "score": 41.23,
+      "date": "2024-02"
+    },
+    {
+      "model": "Gemini 2.5 Flash",
+      "company": "Google",
+      "score": 46.81,
+      "date": "2024-05"
+    },
+    {
+      "model": "Gemini 2.5 Flash",
+      "company": "Google",
+      "score": 50.83,
+      "date": "2024-08"
+    },
+    {
+      "model": "Gemini 2.5 Flash",
+      "company": "Google",
+      "score": 54.36,
+      "date": "2024-11"
+    },
+    {
+      "model": "Gemini 2.5 Flash",
+      "company": "Google",
+      "score": 57.37,
+      "date": "2025-02"
+    },
+    {
+      "model": "Gemini 2.5 Flash",
+      "company": "Google",
+      "score": 60.32,
+      "date": "2025-05"
+    },
+    {
+      "model": "Gemini 2.5 Flash",
+      "company": "Google",
+      "score": 62.15,
+      "date": "2025-08"
+    },
+    {
+      "model": "Gemini 2.5 Flash",
+      "company": "Google",
+      "score": 63.67,
+      "date": "2025-10"
+    },
+    {
+      "model": "Exaone 2",
+      "company": "LG AI Research",
+      "score": 9.48,
+      "date": "2022-11"
+    },
+    {
+      "model": "Exaone 2",
+      "company": "LG AI Research",
+      "score": 11.82,
+      "date": "2023-02"
+    },
+    {
+      "model": "Exaone 2",
+      "company": "LG AI Research",
+      "score": 15.6,
+      "date": "2023-05"
+    },
+    {
+      "model": "Exaone 2",
+      "company": "LG AI Research",
+      "score": 19.74,
+      "date": "2023-08"
+    },
+    {
+      "model": "Exaone 2",
+      "company": "LG AI Research",
+      "score": 23.42,
+      "date": "2023-11"
+    },
+    {
+      "model": "Exaone 2",
+      "company": "LG AI Research",
+      "score": 27.87,
+      "date": "2024-02"
+    },
+    {
+      "model": "Exaone 2",
+      "company": "LG AI Research",
+      "score": 32.2,
+      "date": "2024-05"
+    },
+    {
+      "model": "Exaone 2",
+      "company": "LG AI Research",
+      "score": 36.92,
+      "date": "2024-08"
+    },
+    {
+      "model": "Exaone 2",
+      "company": "LG AI Research",
+      "score": 40.98,
+      "date": "2024-11"
+    },
+    {
+      "model": "Exaone 2",
+      "company": "LG AI Research",
+      "score": 45.38,
+      "date": "2025-02"
+    },
+    {
+      "model": "Exaone 2",
+      "company": "LG AI Research",
+      "score": 48.46,
+      "date": "2025-05"
+    },
+    {
+      "model": "Exaone 2",
+      "company": "LG AI Research",
+      "score": 51.09,
+      "date": "2025-08"
+    },
+    {
+      "model": "Exaone 2",
+      "company": "LG AI Research",
+      "score": 52.47,
+      "date": "2025-10"
+    },
+    {
+      "model": "LLaMA 3.1",
+      "company": "Meta",
+      "score": 15.69,
+      "date": "2022-11"
+    },
+    {
+      "model": "LLaMA 3.1",
+      "company": "Meta",
+      "score": 19.42,
+      "date": "2023-02"
+    },
+    {
+      "model": "LLaMA 3.1",
+      "company": "Meta",
+      "score": 23.46,
+      "date": "2023-05"
+    },
+    {
+      "model": "LLaMA 3.1",
+      "company": "Meta",
+      "score": 27.95,
+      "date": "2023-08"
+    },
+    {
+      "model": "LLaMA 3.1",
+      "company": "Meta",
+      "score": 32.63,
+      "date": "2023-11"
+    },
+    {
+      "model": "LLaMA 3.1",
+      "company": "Meta",
+      "score": 37.87,
+      "date": "2024-02"
+    },
+    {
+      "model": "LLaMA 3.1",
+      "company": "Meta",
+      "score": 43.18,
+      "date": "2024-05"
+    },
+    {
+      "model": "LLaMA 3.1",
+      "company": "Meta",
+      "score": 48.0,
+      "date": "2024-08"
+    },
+    {
+      "model": "LLaMA 3.1",
+      "company": "Meta",
+      "score": 52.6,
+      "date": "2024-11"
+    },
+    {
+      "model": "LLaMA 3.1",
+      "company": "Meta",
+      "score": 56.79,
+      "date": "2025-02"
+    },
+    {
+      "model": "LLaMA 3.1",
+      "company": "Meta",
+      "score": 59.76,
+      "date": "2025-05"
+    },
+    {
+      "model": "LLaMA 3.1",
+      "company": "Meta",
+      "score": 61.19,
+      "date": "2025-08"
+    },
+    {
+      "model": "LLaMA 3.1",
+      "company": "Meta",
+      "score": 62.49,
+      "date": "2025-10"
+    },
+    {
+      "model": "Moonshot-v1-128k",
+      "company": "Moonshot AI",
+      "score": 10.15,
+      "date": "2023-02"
+    },
+    {
+      "model": "Moonshot-v1-128k",
+      "company": "Moonshot AI",
+      "score": 14.43,
+      "date": "2023-05"
+    },
+    {
+      "model": "Moonshot-v1-128k",
+      "company": "Moonshot AI",
+      "score": 18.25,
+      "date": "2023-08"
+    },
+    {
+      "model": "Moonshot-v1-128k",
+      "company": "Moonshot AI",
+      "score": 23.42,
+      "date": "2023-11"
+    },
+    {
+      "model": "Moonshot-v1-128k",
+      "company": "Moonshot AI",
+      "score": 29.05,
+      "date": "2024-02"
+    },
+    {
+      "model": "Moonshot-v1-128k",
+      "company": "Moonshot AI",
+      "score": 33.88,
+      "date": "2024-05"
+    },
+    {
+      "model": "Moonshot-v1-128k",
+      "company": "Moonshot AI",
+      "score": 39.34,
+      "date": "2024-08"
+    },
+    {
+      "model": "Moonshot-v1-128k",
+      "company": "Moonshot AI",
+      "score": 44.51,
+      "date": "2024-11"
+    },
+    {
+      "model": "Moonshot-v1-128k",
+      "company": "Moonshot AI",
+      "score": 48.1,
+      "date": "2025-02"
+    },
+    {
+      "model": "Moonshot-v1-128k",
+      "company": "Moonshot AI",
+      "score": 51.66,
+      "date": "2025-05"
+    },
+    {
+      "model": "Moonshot-v1-128k",
+      "company": "Moonshot AI",
+      "score": 54.69,
+      "date": "2025-08"
+    },
+    {
+      "model": "Moonshot-v1-128k",
+      "company": "Moonshot AI",
+      "score": 56.23,
+      "date": "2025-10"
+    },
+    {
+      "model": "GPT-5",
+      "company": "OpenAI",
+      "score": 25.3,
+      "date": "2022-11"
+    },
+    {
+      "model": "GPT-5",
+      "company": "OpenAI",
+      "score": 28.38,
+      "date": "2023-02"
+    },
+    {
+      "model": "GPT-5",
+      "company": "OpenAI",
+      "score": 32.72,
+      "date": "2023-05"
+    },
+    {
+      "model": "GPT-5",
+      "company": "OpenAI",
+      "score": 38.1,
+      "date": "2023-08"
+    },
+    {
+      "model": "GPT-5",
+      "company": "OpenAI",
+      "score": 45.4,
+      "date": "2023-11"
+    },
+    {
+      "model": "GPT-5",
+      "company": "OpenAI",
+      "score": 52.45,
+      "date": "2024-02"
+    },
+    {
+      "model": "GPT-5",
+      "company": "OpenAI",
+      "score": 57.97,
+      "date": "2024-05"
+    },
+    {
+      "model": "GPT-5",
+      "company": "OpenAI",
+      "score": 61.96,
+      "date": "2024-08"
+    },
+    {
+      "model": "GPT-5",
+      "company": "OpenAI",
+      "score": 64.54,
+      "date": "2024-11"
+    },
+    {
+      "model": "GPT-5",
+      "company": "OpenAI",
+      "score": 67.28,
+      "date": "2025-02"
+    },
+    {
+      "model": "GPT-5",
+      "company": "OpenAI",
+      "score": 67.75,
+      "date": "2025-05"
+    },
+    {
+      "model": "GPT-5",
+      "company": "OpenAI",
+      "score": 67.93,
+      "date": "2025-08"
+    },
+    {
+      "model": "GPT-5",
+      "company": "OpenAI",
+      "score": 68.03,
+      "date": "2025-10"
+    },
+    {
+      "model": "Now Assist",
+      "company": "ServiceNow",
+      "score": 7.75,
+      "date": "2023-05"
+    },
+    {
+      "model": "Now Assist",
+      "company": "ServiceNow",
+      "score": 11.36,
+      "date": "2023-08"
+    },
+    {
+      "model": "Now Assist",
+      "company": "ServiceNow",
+      "score": 14.9,
+      "date": "2023-11"
+    },
+    {
+      "model": "Now Assist",
+      "company": "ServiceNow",
+      "score": 20.06,
+      "date": "2024-02"
+    },
+    {
+      "model": "Now Assist",
+      "company": "ServiceNow",
+      "score": 24.18,
+      "date": "2024-05"
+    },
+    {
+      "model": "Now Assist",
+      "company": "ServiceNow",
+      "score": 29.14,
+      "date": "2024-08"
+    },
+    {
+      "model": "Now Assist",
+      "company": "ServiceNow",
+      "score": 34.48,
+      "date": "2024-11"
+    },
+    {
+      "model": "Now Assist",
+      "company": "ServiceNow",
+      "score": 38.9,
+      "date": "2025-02"
+    },
+    {
+      "model": "Now Assist",
+      "company": "ServiceNow",
+      "score": 43.92,
+      "date": "2025-05"
+    },
+    {
+      "model": "Now Assist",
+      "company": "ServiceNow",
+      "score": 48.21,
+      "date": "2025-08"
+    },
+    {
+      "model": "Now Assist",
+      "company": "ServiceNow",
+      "score": 49.92,
+      "date": "2025-10"
+    },
+    {
+      "model": "Grok 4",
+      "company": "xAI",
+      "score": 14.89,
+      "date": "2023-05"
+    },
+    {
+      "model": "Grok 4",
+      "company": "xAI",
+      "score": 19.41,
+      "date": "2023-08"
+    },
+    {
+      "model": "Grok 4",
+      "company": "xAI",
+      "score": 24.38,
+      "date": "2023-11"
+    },
+    {
+      "model": "Grok 4",
+      "company": "xAI",
+      "score": 31.62,
+      "date": "2024-02"
+    },
+    {
+      "model": "Grok 4",
+      "company": "xAI",
+      "score": 38.34,
+      "date": "2024-05"
+    },
+    {
+      "model": "Grok 4",
+      "company": "xAI",
+      "score": 45.08,
+      "date": "2024-08"
+    },
+    {
+      "model": "Grok 4",
+      "company": "xAI",
+      "score": 52.63,
+      "date": "2024-11"
+    },
+    {
+      "model": "Grok 4",
+      "company": "xAI",
+      "score": 57.73,
+      "date": "2025-02"
+    },
+    {
+      "model": "Grok 4",
+      "company": "xAI",
+      "score": 61.4,
+      "date": "2025-05"
+    },
+    {
+      "model": "Grok 4",
+      "company": "xAI",
+      "score": 63.51,
+      "date": "2025-08"
+    },
+    {
+      "model": "Grok 4",
+      "company": "xAI",
+      "score": 65.1,
+      "date": "2025-10"
+    },
+    {
+      "model": "Grok 4",
+      "company": "xAI",
+      "score": 66.23,
+      "date": "2025-11"
+    },
+    {
+      "model": "Grok 4",
+      "company": "xAI",
+      "score": 66.98,
+      "date": "2025-12"
+    },
+    {
+      "model": "GPT-5",
+      "company": "OpenAI",
+      "score": 68.94,
+      "date": "2025-11"
+    },
+    {
+      "model": "GPT-5",
+      "company": "OpenAI",
+      "score": 69.27,
+      "date": "2025-12"
+    },
+    {
+      "model": "Claude 4.5 Sonnet",
+      "company": "Anthropic",
+      "score": 63.41,
+      "date": "2025-11"
+    },
+    {
+      "model": "Claude 4.5 Sonnet",
+      "company": "Anthropic",
+      "score": 63.79,
+      "date": "2025-12"
+    },
+    {
+      "model": "Gemini 2.5 Flash",
+      "company": "Google",
+      "score": 64.32,
+      "date": "2025-11"
+    },
+    {
+      "model": "Gemini 2.5 Flash",
+      "company": "Google",
+      "score": 64.85,
+      "date": "2025-12"
+    },
+    {
+      "model": "LLaMA 3.1",
+      "company": "Meta",
+      "score": 63.58,
+      "date": "2025-11"
+    },
+    {
+      "model": "LLaMA 3.1",
+      "company": "Meta",
+      "score": 64.01,
+      "date": "2025-12"
+    },
+    {
+      "model": "Tongyi Qianwen 3",
+      "company": "Alibaba",
+      "score": 60.45,
+      "date": "2025-11"
+    },
+    {
+      "model": "Tongyi Qianwen 3",
+      "company": "Alibaba",
+      "score": 61.12,
+      "date": "2025-12"
+    },
+    {
+      "model": "ERNIE Bot 3.0",
+      "company": "Baidu",
+      "score": 59.57,
+      "date": "2025-11"
+    },
+    {
+      "model": "ERNIE Bot 3.0",
+      "company": "Baidu",
+      "score": 60.23,
+      "date": "2025-12"
+    },
+    {
+      "model": "Doubao Max",
+      "company": "ByteDance Seed",
+      "score": 56.82,
+      "date": "2025-11"
+    },
+    {
+      "model": "Doubao Max",
+      "company": "ByteDance Seed",
+      "score": 57.58,
+      "date": "2025-12"
+    },
+    {
+      "model": "DeepSeek V3.2 Exp",
+      "company": "DeepSeek",
+      "score": 60.83,
+      "date": "2025-11"
+    },
+    {
+      "model": "DeepSeek V3.2 Exp",
+      "company": "DeepSeek",
+      "score": 61.51,
+      "date": "2025-12"
+    },
+    {
+      "model": "Moonshot-v1-128k",
+      "company": "Moonshot AI",
+      "score": 57.64,
+      "date": "2025-11"
+    },
+    {
+      "model": "Moonshot-v1-128k",
+      "company": "Moonshot AI",
+      "score": 58.27,
+      "date": "2025-12"
+    },
+    {
+      "model": "Exaone 2",
+      "company": "LG AI Research",
+      "score": 53.98,
+      "date": "2025-11"
+    },
+    {
+      "model": "Exaone 2",
+      "company": "LG AI Research",
+      "score": 54.62,
+      "date": "2025-12"
+    },
+    {
+      "model": "Now Assist",
+      "company": "ServiceNow",
+      "score": 52.15,
+      "date": "2025-11"
+    },
+    {
+      "model": "Now Assist",
+      "company": "ServiceNow",
+      "score": 53.48,
+      "date": "2025-12"
+    }
+  ],
+  "timestamp": "2025-12-04 16:30:00"
+}
